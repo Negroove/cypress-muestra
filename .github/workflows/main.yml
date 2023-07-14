@@ -6,7 +6,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3.5.3
+    - name: Install Dependencies
+      run: npm install
     - name: Cypress.io
       uses: cypress-io/github-action@v5.8.2
       with:
-        start: npx run cypress
+        start: npx cypress run
