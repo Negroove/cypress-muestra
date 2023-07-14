@@ -10,10 +10,6 @@ import login from "../PageObjects/LoginPage"
 //     })
 //   })
 
-
-
-
-
 describe('Este es otro test', () => {
   it.only('Localizando elementos', () => {
     const loginPage = new login();
@@ -22,7 +18,6 @@ describe('Este es otro test', () => {
 
       cy.visit("https://opensource-demo.orangehrmlive.com/");
 
-      
       loginPage.setUsername(credenciales.username);
       loginPage.setPassword(credenciales.password);
       loginPage.clickLogin();
