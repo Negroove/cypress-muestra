@@ -15,7 +15,7 @@ describe('Este es otro test', () => {
     const loginPage = new login();
 
     cy.fixture('Credenciales').then((credenciales) => {
-
+      
       cy.visit("https://opensource-demo.orangehrmlive.com/");
 
       loginPage.setUsername(credenciales.username);
