@@ -11,4 +11,5 @@ jobs:
     - name: Cypress.io
       uses: cypress-io/github-action@v5.8.2
       with:
+        record: false
         start: npx cypress run
